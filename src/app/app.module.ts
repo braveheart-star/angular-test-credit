@@ -9,9 +9,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { ToastrModule } from 'ngx-toastr';
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 import { NumberDirective } from './numbers-only.directive';
 import { CreditCardEffects } from './credit-card/credit-card.effects';
@@ -21,8 +22,8 @@ import { CreditCardComponent } from './credit-card/credit-card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CreditCardComponent,
     HomeComponent,
+    CreditCardComponent,
     NumberDirective,
   ],
   imports: [
