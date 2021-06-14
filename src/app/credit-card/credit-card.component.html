@@ -25,7 +25,8 @@
     </div>
     <div class="form-group">
       <label for="cvvNumber">CVV Number</label>
-      <input numbersOnly maxLength="3" minLength="3" type="password" id="cvvNumber" class="form-control" formControlName="cvvNumber">
+      <input numbersOnly maxLength="3" minLength="3" type="password" id="cvvNumber" class="form-control"
+        formControlName="cvvNumber">
       <div *ngIf="(f.submitted && this.paymentForm.get('cvvNumber')?.invalid)" class="alert">
         CVV should be three digits
       </div>

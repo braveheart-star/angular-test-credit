@@ -26,4 +26,3 @@ export const creditCardReducer = createReducer(
     error: error,
   }))
 );
-

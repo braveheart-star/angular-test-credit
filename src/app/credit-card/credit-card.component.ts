@@ -19,7 +19,10 @@ export class CreditCardComponent implements OnInit {
     cardNumber: new FormControl(null, [Validators.required]),
     cardHolderName: new FormControl(null, [Validators.required]),
     expDate: new FormControl(null, [Validators.required]),
-    cvvNumber: new FormControl(null, [Validators.maxLength(3),Validators.minLength(3)]),
+    cvvNumber: new FormControl(null, [
+      Validators.maxLength(3),
+      Validators.minLength(3),
+    ]),
     amount: new FormControl(0, [Validators.required, Validators.min(0)]),
   });
   get today() {
